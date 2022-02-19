@@ -56,9 +56,25 @@
   Here are some of the most used empty elements. As I said in the <a href="https://github.com/rafaelcoias/basics_of_web_dev/edit/main/README.md#introduction">introduction</a>, empty elements (or single tags) are tags that have not a *closing tag* (</element&gt;).
   
   - **<img&gt;** is used to create/put an image. It needs the image *path* and the width that you want this image have in the document. Here is an example of how its used. <br>
- 
+  
   <b><img src="<i>https://www.alura.com.br/artigos/assets/html-css-js/imagem-1.png</i>" width="50"&gt;</b>
   
+  - <b><input&gt;</b> is used to create something (for example a button). It needs the <i>type</i> of what we are creating and its width. Here is an example of how its used. <br>
+  
+  <b><input type="button" width="50"&gt;</b>
+    
+  - <b><br&gt;</b> is used to do a break line in your text. <br>
+  
+  <b>Your text is on this line and <br&gt; <br>
+    now is on other line.</b>
 
+  - <b><hr&gt;</b> is used to create an horizontal line in your document. Normally used to separate topics and important things. <br>
+
+   ### Most Common Elements
+    
+   Here are some of the most used elements in html.
+    
+   Define a **section** of elements or text.
+    
 ## CSS
 ## Java Script
