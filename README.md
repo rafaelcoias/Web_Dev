@@ -107,6 +107,11 @@
   - **<il&gt;** ... </il&gt; : Defines each point/number of a created list.
   - **<lable&gt;** ... </lable&gt; : Creates a lable with text (like a box with text inside it).
     
+  <details><summary>See how it works.</summary>
+  
+  ![image](https://user-images.githubusercontent.com/91686183/154819050-3e58b1d2-4a74-4e70-9f4e-3c1b3d6f04e9.png)
+  </details>
+    
    Style your text.
     
   - **<b&gt;** ... </b&gt; : **Text in Bolt.**
