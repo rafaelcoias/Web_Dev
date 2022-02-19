@@ -117,36 +117,45 @@
   - **<b&gt;** ... </b&gt; : **Text in Bolt.**
   - **<i&gt;** ... </i&gt; : *Text in Italic.*
   - **<u&gt;** ... </u&gt; : <ins>Underlined text.</ins>
-    
+   
+   Learn more <a href="https://www.w3schools.com/TAgs/default.asp">here</a>.
     
 ## CSS
     
-    coming soon... <br>
+   coming soon... <br>
     
 ## Java Script
     
    ### Introduction <br>
     
-    Java Script is a mix between Java and C. <br>
+   Java Script is a mix between Java and C. <br>
     
-    In contrast, JavaScript has no compilation step. Instead, an interpreter in the browser reads over the JavaScript code, interprets each line, and runs it.
+   In contrast, JavaScript has no compilation step. Instead, an interpreter in the browser reads over the JavaScript code, interprets each line, and runs it.
     
    ### Basic things to know about JavaScript
     
-      - Almost everthing can have properties.
-      - Functions are objects.
-      - for...in loops iterate over property names, not values.
-      - Variable scoping.
-      - JavaScript is not just for browsers.
+  - Almost everthing can have properties.
+  - Functions are objects.
+  - for...in loops iterate over property names, not values.
+  - Variable scoping.
+  - JavaScript is not just for browsers.
     
    ### Variables
     
-    In contrast with other languages, there are two main types of JavaScript variables : **let** and **var**.
+   In contrast with other languages, there are two main types of JavaScript variables : **let** and **var**.
+    
+   Differences between *let* and *var*. <br>
+    
+   Let allows you to declare variables that are limited to the scope of a block statement, or expression on which it is used.
+    
+   Var declares a variable globally, or locally to an entire function regardless of block scope.
     
   <details><summary>Here is how variables in JavaScript work.</summary>
   
   ![image](https://user-images.githubusercontent.com/91686183/154819344-758f7d20-9659-40f4-b7cc-bb15279a8680.png)
   </details>
+    
+   Learn more <a href="https://www.geeksforgeeks.org/difference-between-var-and-let-in-javascript/">here</a>.
     
 <hr>
     
