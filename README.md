@@ -10,7 +10,7 @@
   
   When I started using html and css I wish I had a guide that really explains and resumes everthing important to know before starting to work with **HTML**, **CSS** and **JS**. <br>
   
-  Thats why I wrote this simple script. For those who want to start working in web development and don't know where to start.<br>
+  Thats why I wrote this simple script. For those who want to work with web development and don't know where to start.<br>
   Hope you like it and learn something here!
 
 ## HTML
