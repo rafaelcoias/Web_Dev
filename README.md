@@ -121,17 +121,17 @@
     
 ## CSS
     
-    coming soon...
+    coming soon... <br>
     
 ## Java Script
     
-    ### Introduction <br>
+   ### Introduction <br>
     
     Java Script is a mix between Java and C. <br>
     
     In contrast, JavaScript has no compilation step. Instead, an interpreter in the browser reads over the JavaScript code, interprets each line, and runs it.
     
-    ### Basic things to know about JavaScript
+   ### Basic things to know about JavaScript
     
       - Almost everthing can have properties.
       - Functions are objects.
@@ -139,11 +139,11 @@
       - Variable scoping.
       - JavaScript is not just for browsers.
     
-    ### Variables
+   ### Variables
     
     In contrast with other languages, there are two main types of JavaScript variables : **let** and **var**.
     
-    <details><summary>Here is how variables in JavaScript work.</summary>
+  <details><summary>Here is how variables in JavaScript work.</summary>
   
   ![image](https://user-images.githubusercontent.com/91686183/154819344-758f7d20-9659-40f4-b7cc-bb15279a8680.png)
   </details>
