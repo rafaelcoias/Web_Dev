@@ -1,4 +1,4 @@
-# basics_of_web_dev
+# Basics Of Web Development
 ## Summary
   - <a href="https://github.com/rafaelcoias/basics_of_web_dev/edit/main/README.md#introduction">Introduction</a>
   - <a href="https://github.com/rafaelcoias/basics_of_web_dev/edit/main/README.md#html">HTML</a>
