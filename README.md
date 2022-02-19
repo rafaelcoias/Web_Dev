@@ -161,4 +161,4 @@
     
    I hope you found this script interesting and that you learned something about web development here. 
     
-   Good luck for you who are about to enter in the web world!
+   Good luck for those who are about to enter in the web world!
