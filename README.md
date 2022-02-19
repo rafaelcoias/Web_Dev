@@ -6,7 +6,7 @@
   - <a href="https://github.com/rafaelcoias/Web_Development#java-script">Java Script</a>
 ## Introduction
 
-  This is a simple GUIDE about the basics of web development. <br>
+  This is a simple script about the basics of web development. <br>
   
   When I started using html and css I wish I had a guide that really explains and resumes everthing important to know before starting to work with **HTML**, **CSS** and **JS**. <br>
   
