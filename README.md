@@ -55,9 +55,7 @@
   
   Here are some of the most used empty elements. As I said in the <a href="https://github.com/rafaelcoias/basics_of_web_dev/edit/main/README.md#introduction">introduction</a>, empty elements (or single tags) are tags that have not a *closing tag* (</element&gt;).
   
-  - **<img&gt;** is used to create/put an image. It needs the image *path* and the width that you want this image have in the document. Here is an example of how its used. <br>
-  
-  <b><img src="<i>https://www.alura.com.br/artigos/assets/html-css-js/imagem-1.png</i>" width="50"&gt;</b>
+  - **<img&gt;** is used to create/put an image. It needs the image *path* and the width that you want this image have in the document. Here is an example of how its used. <br> <b><img src="<i>https://www.alura.com.br/artigos/assets/html-css-js/imagem-1.png</i>" width="50"&gt;</b>
   
   - <b><input&gt;</b> is used to create something (for example a button). It needs the <i>type</i> of what we are creating and its width. Here is an example of how its used. <br>
   
@@ -71,10 +69,55 @@
   - <b><hr&gt;</b> is used to create an horizontal line in your document. Normally used to separate topics and important things. <br>
 
    ### Most Common Elements
-    
+ 
    Here are some of the most used elements in html.
     
-   Define a **section** of elements or text.
+   Define a **section** of elements.
+  - **<nav&gt;** ... </nav&gt;
+  - **<div&gt;** ... </div&gt;
+  - **<section&gt;** ... </section&gt;
+  - **<header&gt;** ... </header&gt;
+  - **<main&gt;** ... </main&gt;
+    
+   Define title and **heading**.
+    
+  - **<h1&gt;** ... </h1&gt;
+  - **<h2&gt;** ... </h2&gt;
+  - **<h3&gt;** ... </h3&gt;
+  - **<h4&gt;** ... </h4&gt;
+  - **<h5&gt;** ... </h5&gt;
+   
+  <details><summary>See how it works.</summary>
+  
+  ![image](https://user-images.githubusercontent.com/91686183/154815153-c7028648-5ee0-479b-ac22-a6c989d6c438.png)
+  </details>
+
+   Define a **section** of text.
+    
+  - **<p&gt;** ... </p&gt; : Section of text that ends with an break line. 
+  - **<span&gt;** ... </span&gt; : Section of text.
+  - **<textarea&gt;** ... </textarea&gt; : Section of text.
+  - **<a&gt; href="*link path*"** ... </a&gt; : Section of text that has a link. If you click on the text it sends you to that *href* link.
+  - **<lable&gt;** ... </lable&gt; : Creates a lable with text (like a box with text inside it).
+
+   Define a **list** of text.
+    
+  - **<ul&gt;** ... </ul&gt; : Defines a topic list. Inside this tag there is each point of the list.
+  - **<ol&gt;** ... </ol&gt; : Defines a numeric list. Inside this tag there is each number of the list.
+  - **<il&gt;** ... </il&gt; : Defines each point/number of a created list.
+  - **<lable&gt;** ... </lable&gt; : Creates a lable with text (like a box with text inside it).
+    
+   Style your text.
+    
+  - **<b&gt;** ... </b&gt; : **Text in Bolt.**
+  - **<i&gt;** ... </i&gt; : *Text in Italic.*
+  - **<u&gt;** ... </u&gt; : <ins>Underlined text.</ins>
+    
     
 ## CSS
+    
+    coming soon...
+    
 ## Java Script
+    
+    coming soon...
