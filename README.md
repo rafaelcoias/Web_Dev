@@ -1,9 +1,9 @@
 # Basics Of Web Development
 ## Summary
-  - <a href="https://github.com/rafaelcoias/basics_of_web_dev/edit/main/README.md#introduction">Introduction</a>
-  - <a href="https://github.com/rafaelcoias/basics_of_web_dev/edit/main/README.md#html">HTML</a>
-  - <a href="https://github.com/rafaelcoias/basics_of_web_dev/edit/main/README.md#css">CSS</a>
-  - <a href="https://github.com/rafaelcoias/basics_of_web_dev/edit/main/README.md#java-script">Java Script</a>
+  - <a href="https://github.com/rafaelcoias/Web_Development#introduction">Introduction</a>
+  - <a href="https://github.com/rafaelcoias/Web_Development#html">HTML</a>
+  - <a href="https://github.com/rafaelcoias/Web_Development#css">CSS</a>
+  - <a href="https://github.com/rafaelcoias/Web_Development#java-script">Java Script</a>
 ## Introduction
 
   This is a simple GUIDE about the basics of web development. <br>
