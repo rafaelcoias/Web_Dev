@@ -17,7 +17,7 @@
 
   ### Introduction <br>
   
-  HTML is a simple and easy programming language. It is basically used to write and to structure a web page and its content.
+  HTML (HyperText Markup Language) is a simple and easy programming language. It is basically used to write and to structure a web page and its content.
   
   In HTML there are a lot of *tags*. Here I'm just going to talk about the most used and helpful. 
   
@@ -122,13 +122,103 @@
     
 ## CSS
     
-   coming soon... <br>
+  ### Introduction <br>
+  
+  CSS (Cascading Style Sheets) is used to describe the presentation of a document written in HTML or XML. <br>
+  It describes how elements should be rendered on screen, on paper, in speech, or on other media.
+  
+  There are **#ID's**, **.Classes** and the normal **Selectors**. An ID has more power than a Class, and a class has more power than a Selector. But more on that later.
+    
+  - The *#id* selector styles the element with the specified id.
+  - A *.class* styles the elements with that class attribute so that unique CSS declarations can be applied to those specific elements without affecting other elements on the page.
+  - A *selector* is used to style certain elements. A selector has the same name of the element that we want to change, but will affect every element with the same name on the page.
+ 
+  ### CSS Structure
+    
+   We can start our CSS stylesheet as we want. There are no rules about how to start or write a CSS file.
+    
+   Normally people start by writting a default class, a class that changes everthing. This is helpful if we want to set a certain *color*, *font* or *text-align* as default in our document. <br> Here is how it's done :
+    
+   **&#42;** { <br> 
+   color: green; <br>
+   text-align: center; <br>
+   } <br>
+    
+   <details><summary>Then you can change and style whatever you want.</summary> <br>
+     
+  - If you want to change an element (in this example I'll use the **body** element).
+    
+   **body** { <br> 
+   back-ground-color: blue;<br>
+   } <br>
+    
+  - If you want to change a paragraph (**<p&gt;**) but you dont want to change every single <p&gt; element, you can use a class. 
+    
+   A class is used to specify which elements you want to change. For example if you have this in your html document : 
+    
+     <p class="changeText"> ... </p> <br>
+     ... 
+     <div class="changeText"> ... </div> <br>
+    
+   You can change both *p* and *div* with the same class :
+    
+   **.changeText** { <br> 
+   color: red; <br>
+   font: Arial; <br>
+   } <br>
+    
+   Or you can just change the element **p** that has the class "changeText". In case you don't want the element **div** to change. See how it is done :
+    
+   **p.changeText** { <br> 
+   color: red; <br>
+   font: Arial; <br>
+   } <br>
+   
+  - **ID's** are not so common. It is used like a class, but just for one (and only one) element.
+     
+   If there is something like this in a html document :
+     
+      <h1 id="mainHeading"> Title of Document </h1>
+        
+   Then, to use this *id* in CSS we can do this :
+     
+   **#mainHeading** { <br> 
+   color: rgb(95, 158, 160); <br>
+   text-align: center; <br>
+   } <br>
+     
+   </details>
+   
+   ### Colors
+    
+   It is hard to get used to colors in CSS. They can be chosen in 3 ways.
+   
+  - RGB
+    
+   RGB means red, green, blue. A RGB file consists in composite layers of Red, Gree and Blue, each being coded on 256 levels from 0 to 255.
+    
+   *Black* corresponds to the levels R=0, G=0, B=0. <br>
+   *White* corresponds to the levels R=255, G=255, B=255.
+    
+   So if you use RGB you can create every possible color. It is also possible to write it in Hexadecimal. 
+    
+   <details><summary>For example **rgb(0, 90, 119)** = **#005A77** :</summary>
+   
+   ![image](https://user-images.githubusercontent.com/91686183/154864247-a0adb70e-73fd-4869-9238-525697209cd4.png)
+    </details>
+    
+   You can also add transparency to the color using **RGBA**. Transparency is in percentage (%).
+
+   <details><summary>For example **rgb(0, 90, 119, 50%)** = **#005A7780** :</summary>
+   
+   ![image](https://user-images.githubusercontent.com/91686183/154864429-5df43449-027e-4ffd-ba4a-eda0a8a970a3.png)
+   </details>
     
 ## Java Script
     
    ### Introduction <br>
     
-   Java Script is a mix between Java and C. <br>
+   Java Script is a programming language. It is a mix of Java and C. <br>
     
    In contrast, JavaScript has no compilation step. Instead, an interpreter in the browser reads over the JavaScript code, interprets each line, and runs it.
     
