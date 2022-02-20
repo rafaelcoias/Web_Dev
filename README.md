@@ -193,6 +193,12 @@
     
    It is hard to get used to colors in CSS. They can be chosen in 3 ways.
    
+  - Just write it
+    
+   In CSS you can just write the color that you want and it will automatically use that color. 
+    
+   If you write *red* CSS will convert it to rgb(255, 0, 0).
+  
   - RGB
     
    RGB means red, green, blue. A RGB file consists in composite layers of Red, Gree and Blue, each being coded on 256 levels from 0 to 255.
@@ -202,16 +208,33 @@
     
    So if you use RGB you can create every possible color. It is also possible to write it in Hexadecimal. 
     
-   <details><summary>For example **rgb(0, 90, 119)** = **#005A77** :</summary>
+   <details><summary>For example <b>rgb(0, 90, 119)</b> = <b>#005A77</b> :</summary>
    
    ![image](https://user-images.githubusercontent.com/91686183/154864247-a0adb70e-73fd-4869-9238-525697209cd4.png)
     </details>
     
    You can also add transparency to the color using **RGBA**. Transparency is in percentage (%).
 
-   <details><summary>For example **rgb(0, 90, 119, 50%)** = **#005A7780** :</summary>
+   <details><summary>For example <b>rgb(0, 90, 119, 50%)</b> = <b>#005A7780</b> :</summary>
    
    ![image](https://user-images.githubusercontent.com/91686183/154864429-5df43449-027e-4ffd-ba4a-eda0a8a970a3.png)
+   </details>
+    
+  - HSL
+    
+   HSL is less used but is basically *color*, *saturation (%)* and *shade (%)*. You can use it like rgb.
+    
+   <details><summary>For example <b>hsl(50, 50%, 50%)</b> = <b>#BFAA40</b> :</summary>
+     
+   ![image](https://user-images.githubusercontent.com/91686183/154864636-de8e47b1-7016-48dd-b9de-af021dc5696c.png)
+
+   </details>
+    
+   You can also add transparency to the color using **HSLA**. Transparency is in percentage (%).
+
+   <details><summary>For example <b>hsl(50, 50%, 50%, 50%)</b> = <b>#BFAA4080</b> :</summary>
+   
+   ![image](https://user-images.githubusercontent.com/91686183/154864690-99528452-42ca-47ca-b1ab-e9c05bac44a6.png)
    </details>
     
 ## Java Script
