@@ -236,6 +236,66 @@
    
    ![image](https://user-images.githubusercontent.com/91686183/154864690-99528452-42ca-47ca-b1ab-e9c05bac44a6.png)
    </details>
+   
+   ### Other Features
+    
+   In CSS there are a lot of features that you can use to transform, move and time your design. I am not going to specify each feature but your can easily find what they do on the internet.
+    
+   <details><summary>The <b>:</b> defines that something happends after a specific user action.</summary>
+    
+   <b>class/element : action</b> { <br> 
+   back-ground-color: blue;<br>
+   } <br>
+    
+   For example :
+   
+   Hover ) Does CSS code only when the user moves the mouse over the class/element.
+    
+   <b>class/element : *hover* </b> { <br> 
+   back-ground-color: blue;<br>
+   } <br>
+    
+   Focus ) Does CSS code only when the user clicks on the class/element.
+    
+   <b>class/element : *focus* </b> { <br> 
+   back-ground-color: blue;<br>
+   } <br>
+    
+   Checked ) Does CSS code only when the class/element is checked.
+    
+   <b>class/element : *hover* </b> { <br> 
+   back-ground-color: blue;<br>
+   } <br>
+    
+   first-child ) Does CSS code only on the first class/element child of this class/element.
+    
+   <b>class/element : *first-child* </b> { <br> 
+   back-ground-color: blue;<br>
+   } <br>
+     
+   </details>
+    
+   <details><summary>The <b>::</b> defines that something happends before or after a class/element.</summary>
+    
+   <b>class/element :: when</b> { <br> 
+   back-ground-color: blue;<br>
+   } <br>
+    
+   For example :
+   
+   Before ) Does CSS code before a class/element.
+    
+   <b>class/element : *hover* </b> { <br> 
+   back-ground-color: blue;<br>
+   } <br>
+    
+   After ) Does CSS code before a class/element.
+    
+   <b>class/element : *after* </b> { <br> 
+   back-ground-color: blue;<br>
+   } <br>
+     
+   </details>
     
 ## Java Script
     
