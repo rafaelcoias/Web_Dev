@@ -263,7 +263,7 @@
     
    Checked ) Does CSS code only when the class/element is checked.
     
-   <b>class/element : *hover* </b> { <br> 
+   <b>class/element : *checked* </b> { <br> 
    back-ground-color: blue;<br>
    } <br>
     
@@ -285,7 +285,7 @@
    
    Before ) Does CSS code before a class/element.
     
-   <b>class/element : *hover* </b> { <br> 
+   <b>class/element : *before* </b> { <br> 
    back-ground-color: blue;<br>
    } <br>
     
