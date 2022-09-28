@@ -1,11 +1,17 @@
-* {
+html {
     color: white;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
 }
 
 body {
     margin: 0;
 }
+
+
+/* HEADER */
+
+
 
 header {
     position: sticky;
@@ -16,7 +22,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     height: 5rem;
-    
+
 }
 
 .social-media {
@@ -46,29 +52,40 @@ header {
 }
 
 .info {
-    margin: 10%;
+    background-image: linear-gradient(white, black);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: background-size 300ms ease;
+    padding: 0.6rem;
+
+    text-decoration: none;
+
+    margin: 2.2rem;
     font-size: large;
 }
 
 .info:hover {
     cursor: pointer;
-    color: rgba(255, 255, 255, 50%);
+    background-size: 100% 5px;
 }
 
-main {
-    height: 45rem;
 
+/* MAIN */
+
+
+main {
     background-image: url("https://user-images.githubusercontent.com/91686183/191966935-4514c8d9-4453-4eb8-a7ea-b8ba99569adb.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 9.5rem;
 }
 
 main img {
@@ -77,21 +94,13 @@ main img {
 
     margin: 1rem;
 
-    animation: shadow 1s forwards;
+    animation: shadow 1s forwards 0.7s;
 }
 
 main h1 {
     font-size: 3rem;
-    animation: slide-in  1.5s forwards;
-}
-
-@keyframes shadow {
-    0% {
-        box-shadow: 0 0 0 rgba(0,0,0,.5);
-    }
-    100% {
-        box-shadow: 1rem 1rem 1rem rgba(0,0,0,.5);
-    }
+    opacity: 0;
+    animation: slide-in 1.5s forwards 0.7s;
 }
 
 main span {
@@ -108,31 +117,26 @@ main span {
 }
 
 .name .it {
-    animation-delay: 1s;
-}
-
-.name .dev {
-    animation-delay: 1.5s;
-}
-
-.name .des {
     animation-delay: 2s;
 }
 
-@keyframes slide-in {
-    0% {
-        transform: translateX(-25%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0%);
-        opacity: 1;
-    }
+.name .dev {
+    animation-delay: 2.5s;
 }
+
+.name .des {
+    animation-delay: 3s;
+}
+
+
+
+/* HISTORY */
+
+
 
 .history {
     background-color: black;
-    height: 115rem;
+
 }
 
 .history h2 {
@@ -152,7 +156,7 @@ main span {
 
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -167,27 +171,14 @@ main span {
     width: 40rem;
 }
 
-.csjb {
-
-}
-
-.germany {
-
-}
-
-.iscte {
-
-}
-
-.forty-two {
-
-}
-
-.cisco {
-
+.germany img {
+    background-color: white;
+    border: solid 1rem white;
+    border-radius: 50%;
 }
 
 
+/* KNOWLEDGE */
 
 
 .knowledge {
@@ -226,23 +217,139 @@ main span {
     width: 12rem;
     height: 5rem;
     font-size: 1.5rem;
-    
-    justify-content: center;
+
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
 
     border: solid 0.4rem grey;
     border-radius: 1rem;
+    padding: 0.5rem;
+    transition: 1.5s ease;
 }
+
+.item:hover {
+    width: 20rem;
+    height: 28rem;
+    background-color: rgba(255, 255, 255, 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.item:hover p {
+    opacity: 0;
+    animation: fade-in 1s forwards 0.5s;
+}
+
+.item img {
+    opacity: 0;
+    margin: 5px;
+}
+
+.item label {
+    opacity: 0;
+    margin: 1rem;
+    width: 13.7rem;
+    font-size: 1.2rem;
+}
+
+.item:hover img {
+    animation: fade-in 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.skills.logos {
+    display: grid;
+    grid-template-columns: repeat(3, 5rem);
+    row-gap: 1.2rem;
+    column-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools.logos {
+    display: grid;
+    grid-template-columns: repeat(3, 5rem);
+    row-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang.logos {
+    display: grid;
+    grid-template-columns: repeat(2, 7rem);
+    row-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover ~ label {
+    animation: fade-in 1s forwards;
+}
+
+
+/* LOGO NAME */
+
+.c:hover ~ label::after {
+    content: 'C';
+}
+
+.cpp:hover ~ label::after {
+    content: 'C++';
+}
+
+.csharp:hover ~ label::after {
+    content: 'C Sharp';
+}
+
+.html:hover ~ label::after {
+    content: 'HTML';
+}
+
+.css:hover ~ label::after {
+    content: 'CSS';
+}
+
+.js:hover ~ label::after {
+    content: 'Java Script';
+}
+
+.java:hover ~ label::after {
+    content: 'Java';
+}
+
+.bash:hover ~ label::after {
+    content: 'Shell Script';
+}
+
+.mysql:hover ~ label::after {
+    content: 'SQL';
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
 
 
 footer {
     height: 10rem;
 
     background-color: rgb(61, 61, 61);
-    
+
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -252,9 +359,121 @@ footer div {
     margin: 2rem;
 }
 
+.media_end {
+    position: relative;
+    top: 1rem;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    border-color: transparent;
+}
+
 footer p {
     position: relative;
 
     color: antiquewhite;
     margin: 2rem;
+}
+
+
+
+
+
+
+/* REVEALS */
+
+.odd img {
+    position: relative;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.odd.active_odd img {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.odd p {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.odd.active_odd p {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.even img {
+    position: relative;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.even.active_even img {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.even p {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.even.active_even p {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.knowledge .reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.knowledge .reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+    }
+
+    100% {
+        box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .5);
+    }
 }
