@@ -85,7 +85,7 @@ main {
 
     padding: 9.5rem;
 
-    background-image: linear-gradient(#1e3c6e, black);
+    background-image: linear-gradient(#1e3c6e 50%, black);
 }
 
 main img {
@@ -104,13 +104,11 @@ main img {
     justify-content: center;
     align-items: center;
 
-    background-image: linear-gradient( #1e3c6e, #1e3c6e, black);
+    background-image: linear-gradient( #1e3c6e, grey);
     background-size: 0% 100%;
     background-repeat: no-repeat;
     background-position: left;
     transition: background-size 1s ease;
-
-    padding: 0.5rem;
 }
 
 .me:hover {
