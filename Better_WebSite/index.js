@@ -1,5 +1,9 @@
 window.addEventListener('scroll', reveal);
 
+var menuList = document.getElementById("menuList");
+
+menuList.style.maxHeight = "0px";
+
 function reveal(){
     var reveals = document.querySelectorAll('.reveal');
 
@@ -30,6 +34,16 @@ function reveal(){
                 reveals[i].classList.remove('active');
             }
         }
+    }  
+}
+
+function openmenu() {
+    var menuIcon = document.getElementById("menu-button");
+
+    if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "100px"; 
     }
-   
+    else {
+        menuList.style.maxHeight = "0px";
+    }
 }
