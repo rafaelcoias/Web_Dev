@@ -2,7 +2,7 @@ window.addEventListener('scroll', reveal);
 
 var menuList = document.getElementById("menuList");
 
-menuList.style.maxHeight = "0px";
+menuList.style.display = "none";
 
 function reveal(){
     var reveals = document.querySelectorAll('.reveal');
@@ -40,10 +40,10 @@ function reveal(){
 function openmenu() {
     var menuIcon = document.getElementById("menu-button");
 
-    if (menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "100px"; 
+    if (menuList.style.display == "none") {
+        menuList.style.display = "block"; 
     }
     else {
-        menuList.style.maxHeight = "0px";
+        menuList.style.display = "none";
     }
 }

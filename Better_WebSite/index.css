@@ -1,13 +1,14 @@
 /*  ALL */
 
-html {
+html, body {
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #1e3c6e;
-}
 
-body {
-    margin: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -72,7 +73,11 @@ header {
     background-size: 100% 3px;
 }
 
-.menu {
+#menuList {
+    display: none;
+}
+
+.menu-icon {
     display: none;
 }
 
@@ -89,7 +94,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    padding: 9.5rem;
+    height: 90vh;
 
     background-image: linear-gradient(#1e3c6e 50%, black);
 }
@@ -247,7 +252,11 @@ main span {
 }
 
 .history img {
-    width: 4rem;
+    width: 1rem;
+}
+
+.history .iscte-mobile {
+    display: none;
 }
 
 .history p {
@@ -280,6 +289,17 @@ main span {
     opacity: 1;
 }
 
+.csjb , .fortytwo, .cisco{
+    width: 18rem;
+}
+
+.germany {
+    width: 11rem;
+}
+
+.iscte {
+    width: 25rem ;
+}
 
 
 /* KNOWLEDGE */
@@ -542,74 +562,6 @@ footer p {
     margin: 2rem;
 }
 
-
-
-
-
-/* REVEALS */
-
-.odd img {
-    position: relative;
-    transform: translateX(-50px);
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-.odd.active_odd img {
-    transform: translateX(0px);
-    opacity: 1;
-}
-
-.odd p {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-.odd.active_odd p {
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-.even img {
-    position: relative;
-    transform: translateX(50px);
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-.even.active_even img {
-    transform: translateX(0px);
-    opacity: 1;
-}
-
-.even p {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-.even.active_even p {
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-.knowledge .reveal {
-    position: relative;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-.knowledge .reveal.active {
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-
-
 /* ANIMATIONS */
 
 @keyframes fade-in {
@@ -657,8 +609,255 @@ footer p {
 
 /* SCREEN RESPONSIVE */
 
-@media (min-width:1400px) {
-     main {
-        height: 35rem;
-     }
-} 
+@media only screen and (max-width: 800px) {
+
+    html, body {
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #1e3c6e;
+    
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+
+
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3rem;
+    }
+
+    .social-media {
+        position: relative;
+        left: -7%;
+
+        width: 90%;
+    }
+
+    .media {
+        margin: 1%;
+    }
+
+    .position-info {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        position: relative;
+        left: -3.5%;
+    }
+
+    header div li {
+        position: absolute;
+        top: 75px;
+        left: 0px;
+
+        list-style: none;
+        background-color: #2b5398;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+    }
+
+    #menuList {
+        position: absolute;
+        top: 75%;
+        width: 100%;
+        list-style: none;
+        background-color: #2b5398;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+    }
+
+    #menuList p {
+        margin-right: 15px;
+    }
+
+
+    /* MAIN */
+
+
+    main {
+        height: 75vh;
+        padding: 10%;
+    }
+
+    .me {
+        height: 20rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name h1 {
+        position: relative;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .name span {
+        position: relative;
+    }
+
+    main img {
+        position: relative;
+        width: 12rem;
+    }
+
+    .me {
+        background-image: linear-gradient( #1e3c6e, grey);
+        height: 20rem;
+        background-position: center;
+    }
+
+    .about {
+        position: relative;
+        top: -2rem;
+        height: 29rem;
+        z-index: 2;
+    }
+
+    .about div {
+        height: 30rem;
+    }
+
+    .me:hover img {
+        display: none;
+    }
+
+    /* HISTORY */
+
+    .history div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        height: 28rem;
+    }
+
+    .history .csjb , .history .germany ,  .history .cisco {
+        position: absolute;
+        top: 0px;
+    }
+
+    .history .iscte {
+        display: none;
+    }
+
+    .history .iscte-mobile {
+        display: block;
+        position: absolute;
+        top: 90px;
+    }
+
+    .history .fortytwo {
+        position: absolute;
+        top: -30px;
+        width: 10px;
+    }
+
+    .history .reveal .fortytwotext {
+        position: absolute;
+        top: 30px;
+    }
+
+    .history p {
+        position: relative;
+        top: 80px;
+        width: 350px;
+        font-size: 1.1rem;
+    }
+
+    .history .link {
+        position: relative;
+        top: 75px;
+    }
+}
+
+/* REVEALS */
+
+@media only screen and (min-width: 1000px) {
+
+    .odd img {
+        position: relative;
+        transform: translateX(-50px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .odd.active_odd img {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    .odd p {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .odd.active_odd p {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .even img {
+        position: relative;
+        transform: translateX(50px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .even.active_even img {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    .even p {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .even.active_even p {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .knowledge .reveal {
+        position: relative;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    
+    .knowledge .reveal.active {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
