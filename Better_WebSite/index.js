@@ -1,6 +1,11 @@
 window.addEventListener('scroll', reveal);
 
 var menuList = document.getElementById("menuList");
+var itemskills = document.getElementById("itemskills");
+var itemtools = document.getElementById("itemtools");
+var itemlang = document.getElementById("itemlang");
+
+
 
 menuList.style.display = "none";
 
@@ -45,5 +50,50 @@ function openmenu() {
     }
     else {
         menuList.style.display = "none";
+    }
+}
+
+function displaySkills() {
+    if (itemskills.classList.contains("opened")) {  
+        itemtools.style.display = "block";
+        itemlang.style.display = "block";
+        itemskills.classList.remove('opened');
+        itemskills.classList.add('closed');
+    }
+    else {
+        itemskills.classList.remove('closed');  
+        itemtools.style.display = "none";
+        itemlang.style.display = "none";
+        itemskills.classList.add('opened');   
+    }
+}
+
+function displayTools() {
+    if (itemtools.classList.contains("opened")) {
+        itemskills.style.display = "block";
+        itemlang.style.display = "block";
+        itemtools.classList.remove('opened');
+        itemtools.classList.add('closed');
+    }
+    else {
+        itemtools.classList.remove('closed');
+        itemskills.style.display = "none";
+        itemlang.style.display = "none";
+        itemtools.classList.add('opened');   
+    }
+}
+
+function displayLang() {
+    if (itemlang.classList.contains("opened")) {
+        itemtools.style.display = "block";
+        itemskills.style.display = "block";
+        itemlang.classList.remove('opened');
+        itemlang.classList.add('closed');
+    }
+    else {
+        itemlang.classList.remove('closed');
+        itemtools.style.display = "none";
+        itemskills.style.display = "none";
+        itemlang.classList.add('opened');   
     }
 }

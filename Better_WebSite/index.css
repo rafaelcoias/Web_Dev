@@ -342,7 +342,7 @@ main span {
     height: 5rem;
     font-size: 1.5rem;
 
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 
@@ -406,8 +406,6 @@ main span {
     animation: fade-in 1s forwards;
     animation-delay: 0.5s;
 }
-
-
 
 .skills.logos {
     grid-template-columns: repeat(3, 5rem);
@@ -657,17 +655,9 @@ footer p {
         left: -3.5%;
     }
 
-    header div li {
-        position: absolute;
-        top: 75px;
-        left: 0px;
-
-        list-style: none;
-        background-color: #2b5398;
-        justify-content: center;
-        align-items: center;
-        text-align: right;
-    }
+    header div p:hover {
+        text-decoration: underline;
+    } 
 
     #menuList {
         position: absolute;
@@ -757,9 +747,14 @@ footer p {
         height: 28rem;
     }
 
-    .history .csjb , .history .germany ,  .history .cisco {
+    .history .csjb , .history .cisco {
         position: absolute;
         top: 0px;
+    }
+
+    .history .germany {
+        position: absolute;
+        top: 10px;
     }
 
     .history .iscte {
@@ -793,6 +788,92 @@ footer p {
     .history .link {
         position: relative;
         top: 75px;
+    }
+
+    /* KNOWLEDGE */
+
+    .all {
+        position: relative;
+        height: 30rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem;
+    }
+
+    .item.closed:hover {
+        position: relative;
+        
+        width: 12rem;
+        height: 5rem;
+        font-size: 1.5rem;
+    
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    
+        border: solid 0.4rem grey;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        transition: 1.5s ease;
+    }
+
+    .item.opened:hover {
+        width: 15rem;
+        height: 26rem;
+        background-color: rgba(255, 255, 255, 10%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .item.closed:hover .logos {
+        display: none;
+    }
+
+    .item:hover .skills.logos {
+        position: relative;
+        top: 40px;
+    }
+
+    .item:hover .tools.logos {
+        position: relative;
+        top: 30px;
+    }
+
+    .item:hover .lang.logos {
+        position: relative;
+        top: 65px;
+    }
+
+    .tools.logos {
+        grid-template-columns: repeat(2, 5rem);
+        row-gap: 3rem;
+        column-gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 370px) {
+    .history p {
+        position: relative;
+        top: 80px;
+        width: 300px;
+        font-size: 1.1rem;
+    }
+
+    .history .csjb {
+        position: absolute;
+        top: -20px;
+    }
+
+    .history .germany {
+        position: absolute;
+        top: 0;
     }
 }
 
