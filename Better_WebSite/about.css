@@ -44,6 +44,10 @@ header {
     cursor: pointer;
 }
 
+.media:hover {
+    transform: scale(1.2);
+}
+
 .position-info {
     position: relative;
     width: 35%;
@@ -551,6 +555,10 @@ footer div {
 
     background-color: transparent;
     border-color: transparent;
+}
+
+.media_end:hover {
+    transform: scale(1.15);
 }
 
 footer p {
