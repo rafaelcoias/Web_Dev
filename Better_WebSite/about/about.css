@@ -17,7 +17,8 @@ html, body {
 
 
 header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 999;
     background-image: linear-gradient(#1e3c6e, #1e3c6e);
@@ -98,7 +99,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    height: 90vh;
+    height: 105vh;
 
     background-image: linear-gradient(#1e3c6e 50%, black);
 }

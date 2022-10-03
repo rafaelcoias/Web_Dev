@@ -18,6 +18,7 @@ html, body {
 
 header {
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 999;
     background-image: linear-gradient(#1e3c6e, #1e3c6e);
@@ -25,7 +26,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     height: 5rem;
-
 }
 
 .social-media {
@@ -137,6 +137,7 @@ textarea {
     color: black;
     border: none;
 }
+
 
 #btn {
     border: none;

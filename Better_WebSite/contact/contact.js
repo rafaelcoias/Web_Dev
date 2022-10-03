@@ -41,14 +41,11 @@ function sendEmail() {
     else
         document.getElementById('message').style.border = 'none';
     if (error != '') {
-        alert(error);
         return false;
     }
 
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "rafaelmsppcoias@gmail.com",
-        Password : "D00C070B58220B8F6E9B3DF22A73A23251D1",
+        SecureToken : "e1e7ff84-d824-4466-a907-476316a33c23",
         To : 'rafaelmsppcoias@gmail.com',
         From : "rafaelmsppcoias@gmail.com",
         Subject : subject,

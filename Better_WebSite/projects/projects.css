@@ -18,6 +18,7 @@ html, body {
 
 header {
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 999;
     background-image: linear-gradient(#1e3c6e, #1e3c6e);
@@ -25,7 +26,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     height: 5rem;
-
 }
 
 .social-media {
@@ -185,46 +185,46 @@ main h1 {
 
 
 .libft {
-    background-image: url("https://user-images.githubusercontent.com/91686183/193463439-38253ad8-7c22-4f15-9d09-6721f2034030.png");
+    background-image: url("../images/projects/libft.png");
 }
 
 .pushswap {
-    background-image: url("https://user-images.githubusercontent.com/91686183/193463449-3667181d-7fe4-4c2b-9d88-0796cc2f50da.png");
+    background-image: url("../images/projects/pushswap.png");
     background-size: contain;
 }
 
 .solong {
-    background-image: url("https://user-images.githubusercontent.com/91686183/193463494-b22bf776-cb4d-43c5-909c-6d8bc6a03a49.png");
+    background-image: url("../images/projects/solong.png");
 }
 
 .pipex {
-    background-image: url("https://user-images.githubusercontent.com/91686183/193463418-7c3d9545-4f1b-46e7-abf4-580bc5c570f6.png");
+    background-image: url("../images/projects/pipex.png");
     background-position:10%;
 }
 
 .philo {
-    background-image: url("https://user-images.githubusercontent.com/91686183/193463483-5e51dc66-44de-4740-bf88-04bf2830a751.png");
+    background-image: url("../images/projects/philo.png");
 }
 
 .minishell {
-    background-image: url("https://user-images.githubusercontent.com/91686183/193464242-2f60092d-6688-4b74-b41b-009612e24d10.png");
+    background-image: url("../images/projects/minishell.png");
     background-position: 10%;
 }
 
 .csharp {
-    background-image: url("https://user-images.githubusercontent.com/91686183/193463467-ec8c398c-cd84-4ff6-a0ce-f8f51744ff1f.png");
+    background-image: url("../images/projects/csharp.png");
 }
 
 .photoalbum {
-    background-image: url("https://user-images.githubusercontent.com/91686183/193463459-88daabb8-5ffd-45ee-acbb-b9143bf47b6f.png");
+    background-image: url("../images/projects/photoalbum.png");
 }
 
 .scut {
-    background-image: url("https://user-images.githubusercontent.com/91686183/193463456-e34d3563-d849-4fc4-8135-aba518b6526f.png");
+    background-image: url("../images/projects/scut.png");
 }
 
 .webdev {
-    background-image: url("https://user-images.githubusercontent.com/91686183/193463489-842f4ce9-afad-47d1-9c1b-bc5cf1d90e76.png");
+    background-image: url("../images/projects/webdev.png");
 }
 
 
