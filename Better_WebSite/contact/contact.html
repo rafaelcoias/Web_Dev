@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="contact.css">
-    <script src="about.js" defer></script>
+    <script src="contact.js" defer></script>
     <title>Contact me</title>
 </head>
 <body>
@@ -31,23 +31,22 @@
     <!--    MAIN      -->
     <main>
         <h1>Lets's Talk !</h1>
-        <div class="form">
-            <input name="Name" id="name" type="text">
-            <input name="Email" id="email" type="text">
-            <input name="Subject" id="subject" type="text">
-            <textarea name="Message" id="message" cols="30" rows="10"></textarea>
-            <button id="btn">Send</button>
-        </div>
+        <form onsubmit="sendEmail(); return false;">
+            <input placeholder="Name" id="name" type="text" autocomplete="off">
+            <input placeholder="Email" id="email" type="text" autocomplete="off">
+            <input placeholder="Subject" id="subject" type="text" autocomplete="off">
+            <textarea placeholder="Message" id="message" cols="30" rows="10"></textarea>
+            <button id="btn" type="submit">Send</button>
+        </form>
     </main>
     <!--    FOOTER      -->
     <footer>
-        <div class="footer_media">
-            <button type="button" class="media_end" onclick="window.open('https://www.instagram.com/rafaelcoias/','_blank')"><img src="https://user-images.githubusercontent.com/91686183/177218370-6cf2e18f-09b7-4270-81e8-758fad7c79fd.png" width="35"></button>
-            <button type="button" class="media_end" onclick="window.open('https://www.facebook.com/rafael.coias','_blank')"><img src="https://user-images.githubusercontent.com/91686183/177218542-e62b7d60-00e9-49d7-9801-944844532c63.png" width="35"></button>
-            <button type="button" class="media_end" onclick="window.open('https://pt.linkedin.com/in/rafael-pereira-c%C3%B3ias-022335223','_blank')"><img src="https://user-images.githubusercontent.com/91686183/177218424-9e0e1a53-d646-41c0-a98b-388488fcaa31.png" width="35"></button>
-            <button type="button" class="media_end" onclick="window.open('https://github.com/rafaelcoias','_blank')"><img src="https://user-images.githubusercontent.com/91686183/177218247-220aad89-df6a-4cd7-b8aa-04161e401134.png" width="33"></button>
+        <div class="contact">
+            <p class="title">My email</p>
+            <p class="email">rafaelmsppcoias@gmail.com</p>
         </div>
         <p class="name">&copy; Rafael Cóias 2022<br> Created and Designed by Rafael Cóias</p>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
