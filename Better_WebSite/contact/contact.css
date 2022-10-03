@@ -69,7 +69,7 @@ header {
     text-decoration: none;
 
     margin: 2.2rem;
-    font-size: large;
+    font-size: 1.2rem;
 }
 
 .info:hover {
@@ -87,65 +87,61 @@ header {
 
 /* MAIN */
 
-
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
-    height: 95vh;
-    padding: 1rem;
+    height: 80vh;
+    background-image: linear-gradient(#1e3c6e, #2b5398, grey);
 
-    background-image: linear-gradient(#1e3c6e 50%, black);
+    padding: 5%;
 }
 
 main h1 {
     position: absolute;
-    top: 80px;
-
-    background-image: linear-gradient(white, white);
-    background-size: 0% 2px;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    transition: background-size 1s ease; 
-
-    padding: 0.6rem;
-    animation: line-in 1s forwards 1s;
+    top: 7rem;
 }
 
-.grid {
-    position: relative;
-    width: 100%;
-
-    display: grid;
-    grid-template-columns: repeat(4, 5rem);
-    row-gap: 1rem;
-    column-gap: 12rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.project {
-    width: 12rem;
-    height: 15rem;
-
-    border: solid 2px grey;
-    border-radius: 10%;
-
-    margin: 1rem;
-    padding: 1rem;
-
+.form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    width: 30%;
 }
 
+input {
+    height: 1.4rem;
+}
 
+input , textarea {
+    background-color: rgb(203, 203, 203);
+    color: black;
+    border: none;
+    margin: 5%;
+    width: 100%;
+}
 
+#btn {
+    border: none;
+    border-radius: 15%;
 
+    width: 8rem;
+    height: 2rem;
+    margin: 5%;
 
+    background-color:#2b5398;
+    color: white;
+    transition: 500ms ease;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #2b5398;
+}
 
 
 /* FOOTER */
@@ -169,7 +165,7 @@ footer div {
 
 .media_end {
     position: relative;
-    top: 1rem;
+    top: 2rem;
 
     cursor: pointer;
 
@@ -178,7 +174,7 @@ footer div {
 }
 
 .media_end:hover {
-    transform: scale(1.15);
+    filter: invert(35%);
 }
 
 footer p {
@@ -186,15 +182,4 @@ footer p {
 
     color: antiquewhite;
     margin: 2rem;
-}
-
-/* ANIMATIONS */
-
-@keyframes line-in {
-    0% {
-        background-size: 0% 3px;
-    }
-    100% {
-        background-size: 100% 2px;
-    }
 }

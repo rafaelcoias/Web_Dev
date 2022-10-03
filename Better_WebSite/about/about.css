@@ -69,7 +69,7 @@ header {
     text-decoration: none;
 
     margin: 2.2rem;
-    font-size: large;
+    font-size: 1.2rem;
 }
 
 .info:hover {
@@ -558,7 +558,7 @@ footer div {
 }
 
 .media_end:hover {
-    transform: scale(1.15);
+    filter: invert(35%);
 }
 
 footer p {
@@ -679,7 +679,7 @@ footer p {
     }
 
     #menuList p {
-        margin-right: 15px;
+        margin-right: 6%;
     }
 
 

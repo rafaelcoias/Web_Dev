@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script src="about.js" defer></script>
+    <title>Contact me</title>
+</head>
+<body>
+    <!--    HEADER      -->
+    <header>
+        <div class="social-media">
+            <button type="button" class="media" onclick="window.open('https://www.instagram.com/rafaelcoias/','_blank')"><img src="https://user-images.githubusercontent.com/91686183/191961207-a6bd9066-8fda-4547-be0a-3381442f62b5.png" width="40rem"></button>
+            <button type="button" class="media" onclick="window.open('https://www.facebook.com/rafael.coias','_blank')"><img src="https://user-images.githubusercontent.com/91686183/193424800-b06f81d1-eb98-4b28-91af-c9f4632cf4a1.png" width="50rem"></button>
+            <button type="button" class="media" onclick="window.open('https://pt.linkedin.com/in/rafael-pereira-c%C3%B3ias-022335223','_blank')"><img src="https://user-images.githubusercontent.com/91686183/191961044-92e2841c-2813-4b3b-9588-d2f9dcb5ac3a.png" width="55rem" style="position:relative; top:3px"></button>
+            <button type="button" class="media" onclick="window.open('https://github.com/rafaelcoias','_blank')"><img src="https://user-images.githubusercontent.com/91686183/191961004-9e38db53-36c7-4a7b-9665-d6d48d862795.png" width="35rem"></button>
+        </div>
+        <div class="position-info">
+            <label class="info" onclick="window.open('../about/about.html')">About</label>
+            <label class="info" onclick="window.open('../projects/projects.html')">Projects</label>
+            <label class="info" onclick="window.open('#')">Contact</label>
+        </div>
+        <img class="menu-icon" src="https://user-images.githubusercontent.com/91686183/193296486-dbecfcc2-77ad-46ff-bbcf-1747a45c97f5.png" onclick="openmenu()">
+        <div id="menuList">
+            <p onclick="window.open('../about/about.html')">ABOUT</p>
+            <p onclick="window.open('../projects/projects.html')">PROJECTS</p>
+        </div>
+    </header>
+    <!--    MAIN      -->
+    <main>
+        <h1>Lets's Talk !</h1>
+        <div class="form">
+            <input name="Name" id="name" type="text">
+            <input name="Email" id="email" type="text">
+            <input name="Subject" id="subject" type="text">
+            <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+            <button id="btn">Send</button>
+        </div>
+    </main>
+    <!--    FOOTER      -->
+    <footer>
+        <div class="footer_media">
+            <button type="button" class="media_end" onclick="window.open('https://www.instagram.com/rafaelcoias/','_blank')"><img src="https://user-images.githubusercontent.com/91686183/177218370-6cf2e18f-09b7-4270-81e8-758fad7c79fd.png" width="35"></button>
+            <button type="button" class="media_end" onclick="window.open('https://www.facebook.com/rafael.coias','_blank')"><img src="https://user-images.githubusercontent.com/91686183/177218542-e62b7d60-00e9-49d7-9801-944844532c63.png" width="35"></button>
+            <button type="button" class="media_end" onclick="window.open('https://pt.linkedin.com/in/rafael-pereira-c%C3%B3ias-022335223','_blank')"><img src="https://user-images.githubusercontent.com/91686183/177218424-9e0e1a53-d646-41c0-a98b-388488fcaa31.png" width="35"></button>
+            <button type="button" class="media_end" onclick="window.open('https://github.com/rafaelcoias','_blank')"><img src="https://user-images.githubusercontent.com/91686183/177218247-220aad89-df6a-4cd7-b8aa-04161e401134.png" width="33"></button>
+        </div>
+        <p class="name">&copy; Rafael Cóias 2022<br> Created and Designed by Rafael Cóias</p>
+    </footer>
+</body>
+</html>
